@@ -188,9 +188,10 @@ header {
     .light { background: var(--light); }
 
     .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 22px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 24px;
+  align-items: stretch;
     }
 
     .card {
