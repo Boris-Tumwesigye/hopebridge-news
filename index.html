@@ -82,11 +82,46 @@ header {
     nav a:hover { color: var(--green); }
 
     .hero {
-      background: linear-gradient(120deg, #104d3b, #247c58);
-      color: white;
-      padding: 85px 7%;
-      text-align: center;
-    }
+  background: linear-gradient(120deg, #104d3b, #247c58);
+  color: white;
+  padding: 100px 7%;
+  text-align: center;
+  border-radius: 0 0 18px 18px;
+}
+
+.hero-label {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: clamp(32px, 5vw, 52px);
+  line-height: 1.2;
+  max-width: 850px;
+  margin: 0 auto 24px;
+}
+
+.hero > p:not(.hero-label):not(.hero-tagline) {
+  max-width: 760px;
+  margin: 0 auto 28px;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.hero-tagline {
+  margin-top: 30px;
+  font-style: italic;
+  font-size: 15px;
+}
 
     .hero h1 {
       font-size: clamp(32px, 6vw, 52px);
