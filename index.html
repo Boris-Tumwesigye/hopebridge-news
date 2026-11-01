@@ -240,10 +240,46 @@ header {
     }
 
     @media (max-width: 600px) {
-      header { justify-content: center; }
-      nav { justify-content: center; }
-      .hero { padding: 60px 6%; }
-      section { padding: 45px 6%; }
+  header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .hero {
+    padding: 55px 6%;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+    line-height: 1.25;
+  }
+
+  .hero > p:not(.hero-label):not(.hero-tagline) {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-buttons .button {
+    width: 100%;
+    max-width: 280px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  section {
+    padding: 45px 6%;
+  }
     }
   </style>
 </head>
